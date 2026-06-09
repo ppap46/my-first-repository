@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>응프화 과제 제출 - 탭 메뉴 제어</title>
+  <link rel="stylesheet" href="탭전환 - 연습.css">
+</head>
+<body>
+  <div class="tabs">
+    <button class="tabBtn active" data-target="moon">달(Moon)</button>
+    <button class="tabBtn" data-target="mars">화성(Mars)</button>
+    <button class="tabBtn" data-target="jupiter">목성(Jupiter)</button>
+  </div>
+
+  <div class="content-wrapper">
+    <div id="moon" class="tabPanel">
+      <h2>지구의 위성, 달</h2>
+      <p>밤하늘에서 가장 밝게 보이는 천체입니다.</p>
+    </div>
+    <div id="mars" class="tabPanel hidden">
+      <h2>붉은 행성, 화성</h2>
+      <p>생명체가 살았을 가능성이 높은 행성입니다.</p>
+    </div>
+    <div id="jupiter" class="tabPanel hidden">
+      <h2>태양계의 왕, 목성</h2>
+      <p>태양계에서 가장 큰 가스 행성입니다.</p>
+    </div>
+  </div>
+
+  <script src="탭전환 - 연습.js"></script>
+</body>
+</html>

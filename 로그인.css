@@ -1,0 +1,78 @@
+/* 모든 요소의 크기 계산 기준을 통일 */
+* { box-sizing: border-box; }
+
+/* 페이지 전체 기본 설정 */
+body {
+  margin: 0; /* 브라우저 기본 여백 제거 */
+  font: 16px "Malgun Gothic", sans-serif; /* 기본 글꼴과 크기 설정 */
+  background: #f5f5f5; /* 밝은 회색 배경 */
+  color: #222; /* 기본 글자 색상 */
+}
+
+/* 위쪽 제목, 아래쪽 푸터에 공통 적용 */
+.bar {
+  padding: 16px 20px; /* 안쪽 여백 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  background: #e8eefc; /* 연한 파란색 배경 */
+}
+
+/* 가운데 본문 영역 */
+.wrap { 
+  max-width: 520px; /* 최대 너비 제한 */
+  margin: auto; /* 좌우 중앙 정렬 */
+  padding: 24px 16px; /* 안쪽 여백 */
+}
+
+/* 카드 박스 모양 */
+.card {
+  padding: 20px; /* 안쪽 여백 */
+  border: 1px solid #ddd; /* 연한 회색 테두리 */
+  border-radius: 12px; /* 둥근 모서리 */
+  background: #fff; /* 흰색 배경 */
+}
+
+/* 화면 전환용 숨김 클래스 */
+.hidden { display: none; } /* 로그인과 회원가입 화면을 전환할 때 사용 */
+
+/* 라벨은 한 줄 전체를 차지 */
+label {
+  display: block; /* 라벨을 블록 요소로 만들어 한 줄 전체를 차지하게 함 */
+  margin-bottom: 6px; /* 라벨과 입력칸 사이의 간격 */
+  font-size: 14px; /* 라벨 글자 크기 */
+}
+
+/* 입력칸과 버튼의 공통 크기 */
+input, .btn {
+  width: 100%; /* 가로 전체를 차지하도록 설정 */
+  padding: 12px; /* 안쪽 여백 */
+  font-size: 16px; /* 글자 크기 */
+  border-radius: 8px; /* 둥근 모서리 */
+}
+
+/* 입력칸 모양 */
+input {
+  margin-bottom: 12px; /* 입력칸과 다음 요소 사이의 간격 */
+  border: 1px solid #bbb; /* 연한 회색 테두리 */
+}
+
+/* 입력칸 선택 시 테두리 강조 */
+input:focus {
+  outline: none; /* 기본 포커스 효과 제거 */
+  border-color: #333; /* 테두리 색상 변경 */
+}
+
+/* 버튼 모양 */
+.btn {
+  border: 0; /* 테두리 제거 */
+  background: #222; /* 진한 회색 배경 */
+  color: #fff; /* 흰색 글자 */
+  cursor: pointer; /* 마우스 커서 변경 */
+}
+
+/* 오류 메시지 자리 확보 */
+.error {
+  min-height: 20px; /* 오류 메시지 최소 높이 설정 */
+  margin: 10px 0; /* 오류 메시지와 다른 요소 사이의 간격 */
+  color: #c00; /* 빨간색 글자 */
+  font-size: 14px; /* 오류 메시지 글자 크기 */
+}

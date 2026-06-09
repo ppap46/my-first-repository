@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>응프화 과제 제출</title>
+  <link rel="stylesheet" href="로그인.css">
+</head>
+<body>
+  <!-- 위쪽 제목 영역 -->
+  <header class="bar">
+    <h1>응프화 과제 제출</h1>
+  </header>
+
+  <main class="wrap">
+    <!-- 로그인 화면 -->
+    <section id="login" class="card">
+      <h2>로그인</h2>
+
+      <!-- label의 for와 input의 id를 연결 -->
+      <label for="studentId">학번</label>
+      <input id="studentId" type="text" placeholder="예: 10101">
+
+      <label for="pw">비밀번호</label>
+      <input id="pw" type="password" placeholder="비밀번호 입력">
+
+      <!-- 오류 메시지 자리 -->
+      <p id="msg" class="error" aria-live="polite"></p>
+
+      <!-- 클릭 시 로그인 검사 -->
+      <button id="loginBtn" class="btn" type="button">로그인</button>
+    </section>
+
+    <!-- 홈 화면: 처음에는 숨김 -->
+    <section id="home" class="card hidden">
+      <h2>홈 화면</h2>
+      <p>로그인에 성공했습니다.</p>
+      <button id="logoutBtn" class="btn" type="button">로그아웃</button>
+    </section>
+  </main>
+
+  <!-- 아래쪽 학교명 영역 -->
+  <footer class="bar">
+    <p>성일정보고등학교 소프트웨어개발과</p>
+  </footer>
+
+  <script src="로그인.js"></script>
+</body>
+</html>

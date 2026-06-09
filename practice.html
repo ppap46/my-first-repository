@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="로그인.css"> <title>마법의 문장 연습</title>
+</head>
+<body>
+  <header class="bar"><h1>🪄 마법의 문장 생성기</h1></header>
+  
+  <main class="wrap">
+    <section id="input-page" class="card">
+      <label>주인공 이름</label>
+      <input id="userName" type="text" placeholder="예: 해리포터">
+      
+      <label>좋아하는 색깔</label>
+      <input id="userColor" type="text" placeholder="예: 빨간색">
+      
+      <p id="guide-msg" class="error"></p>
+      <button id="makeBtn" class="btn">문장 만들기</button>
+    </section>
+
+    <section id="result-page" class="card hidden">
+      <h2>결과 결과!</h2>
+      <p id="result-text" style="font-size: 1.2rem; font-weight: bold;"></p>
+      <button id="backBtn" class="btn">다시 하기</button>
+    </section>
+  </main>
+
+  <script src="practice.js"></script>
+</body>
+</html>

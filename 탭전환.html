@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>응프화 과제 제출 - 탭 메뉴 제어</title>
+  <link rel="stylesheet" href="탭전환.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>응프화 과제 제출</h1>
+    <p>탭 메뉴 제어 구현 과제</p>
+  </header>
+
+  <main class="site-main">
+    <section class="card">
+      <h2>홈 화면</h2>
+
+      <!-- data-target 값은 연결할 탭 내용의 id를 뜻함 -->
+      <nav class="tab-menu" aria-label="과제 메뉴">
+        <button type="button" class="tabBtn" data-target="tabToday">오늘의 과제</button>
+        <button type="button" class="tabBtn" data-target="tabSubmit">제출 확인</button>
+        <button type="button" class="tabBtn" data-target="tabNotice">공지</button>
+      </nav>
+
+      <section id="tabToday" class="tabPanel hidden">
+        <h3>오늘의 과제</h3>
+        <p>오늘의 과제 목록이 표시되는 영역입니다.</p>
+      </section>
+
+      <section id="tabSubmit" class="tabPanel hidden">
+        <h3>제출 확인</h3>
+        <p>제출 확인 내용이 표시되는 영역입니다.</p>
+      </section>
+
+      <section id="tabNotice" class="tabPanel hidden">
+        <h3>공지</h3>
+        <p>공지사항이 표시되는 영역입니다.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>고1 화면구현 실습</p>
+  </footer>
+
+  <script src="탭전환.js"></script>
+</body>
+</html>
